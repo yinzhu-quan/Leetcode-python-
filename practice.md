@@ -2,10 +2,9 @@
 
 #### 2022.04.12
 
-215. Kth Largest Element in an Array
+215.Kth Largest Element in an Array
 
-`
-     def findKthLargest(self, nums: List[int], k: int) -> int:
+        def findKthLargest(self, nums: List[int], k: int) -> int:
         k = len(nums) - k
         
         def partition(l, r):
@@ -18,4 +17,3 @@
                     p += 1
             nums[p], nums[r] = nums[r], nums[p]
             return p
-`
